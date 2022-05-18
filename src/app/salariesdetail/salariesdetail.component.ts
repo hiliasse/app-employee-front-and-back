@@ -28,17 +28,14 @@ export class SalariesdetailComponent implements OnInit {
   onUpdateSalarie(employe : Salaries) {
 
     console.log("salarie : ", employe);
-    this.salarserv.updateSalaries(this.salarie.id,employe).subscribe(
-      (data) => {
+    this.salarserv.updateSalaries(employe).subscribe(
+      (data ) => {
         console.log("employee : ", data);
       }
     )
   }
 
-
   onDeleteSalarie() {
-
-    // console.log("salarie : ", employe);
     console.log("employee : ", this.salarie.id);
     this.salarserv.deleteSalaries(this.salarie.id).subscribe(
       (data) => {

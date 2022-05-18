@@ -30,14 +30,14 @@ export class SalariesService {
     return this.http.post<Salaries>(this.host+"/add/",sal);
   }
 
-  updateSalaries(id : number, sal:Salaries):Observable<Salaries>{
-    // return this.http.put<Salaries>(this.host+"/salaries/"+id,sal);
-    return this.http.put<Salaries>(this.host+"/update/"+id,sal);
-  }
-
-  // updateSalaries(sal:Salaries):Observable<Salaries>{
-  //   return this.http.put<Salaries>(this.host+"/update",sal);
+  // updateSalaries(id : number, sal:Salaries):Observable<Salaries>{
+  //   // return this.http.put<Salaries>(this.host+"/salaries/"+id,sal);
+  //   return this.http.put<Salaries>(this.host+"/update/"+id,sal);
   // }
+
+  updateSalaries(sal:Salaries):Observable<Salaries>{
+    return this.http.put<Salaries>(this.host+"/update",sal);
+  }
 
   deleteSalaries(salarieId:number):Observable<void>{
     // return this.http.delete<void>(this.host+"/salaries/"+salarieId);
