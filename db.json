@@ -1,0 +1,40 @@
+{
+  "salaries": [
+    {
+      "firstname": "Diakhate",
+      "lastname": "Bakaries",
+      "email": "bakary.diakhate@soprasteria.com",
+      "numberPhone": "0706050402",
+      "matricule": "M100234",
+      "fonction": "developper senior",
+      "id": 1
+    },
+    {
+      "firstname": "Diak",
+      "lastname": "Carlit",
+      "email": "bakary.diakhate@soprasteria.com",
+      "numberPhone": "0706050402",
+      "matricule": "M100456",
+      "fonction": "developper senior ",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "firstname": "Schawrtz",
+      "lastname": "Mael",
+      "email": "mael.Schawrtz@soprasteria.com",
+      "numberPhone": "0706050402",
+      "matricule": "M100456",
+      "fonction": "developper senior Niort "
+    },
+    {
+      "firstname": "ALPHa",
+      "lastname": "Diallo",
+      "email": "Alpha.diallo@soprasteria.com",
+      "numberPhone": "0706050402",
+      "matricule": "M100456",
+      "fonction": "developper senior Niort ",
+      "id": 4
+    }
+  ]
+}

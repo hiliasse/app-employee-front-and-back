@@ -1,0 +1,61 @@
+<!-- <div class="input-group">
+    <div class="form-outline">
+      <input id="search-input" type="search" id="form1" class="form-control" />
+      <label class="form-label" for="form1">Search</label>
+    </div>
+    <button id="search-button" type="button" class="btn btn-primary">
+      <i class="fas fa-search"></i>
+    </button>
+  </div> -->
+
+  <div class="input-group">
+    <input type="text" class="form-control" name = "Collaborateur" placeholder="Search Collaborateur"  [(ngModel)]="Collaborateur" (ngModelChange)="Collaborateur = $event">
+    <div class="input-group-append">
+      <button button (click)="onGetSalariesBySearch()" class="btn btn-secondary" type="button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="container mt-5" >
+    <div class="row">    
+      <div *ngFor="let p of salar" class="col-md ">
+        <!-- <div class="col-md-5"> -->
+            <div class="contact-box center-version">
+                <a href="#profile.html"  [routerLink]="['/salariesdetail',p.id]" >
+                    <img alt="image" class="img-circle" src="https://bootdey.com/img/Content/avatar/avatar1.png" >
+                    <h3 class="m-b"> {{p.firstName}}  {{p.lastName}}  </h3>
+                    <div class="font-bold"> <Strong>{{p.job | uppercase}} </Strong></div>
+                    <div class="font-bold"> Email : {{p.email}}</div>
+                    <div class="font-bold"> Tel : {{p.phoneNumber}}</div>
+                </a>
+                <div class="contact-box-footer">
+
+                  
+                    <div class="m-t-xs btn-group">
+                        <a class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
+                        <a class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+        
+            </div>
+        <!-- </div> -->
+      </div>
+    </div>
+</div>
+
+
+<!-- <table class="table">
+  <tr>
+    <th>ID</th><th>Firstname</th><th>Lastname</th><th>Email</th>
+  </tr>
+ 
+  <tr *ngFor="let p of salar">
+    <td>{{p.id}}</td>
+    <td>{{p.firstname}}</td>
+    <td>{{p.lastname}}</td>
+    <td>{{p.email}}</td>
+  </tr>
+ 
+</table> -->
+
