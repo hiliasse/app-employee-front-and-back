@@ -25,15 +25,7 @@ export class SalariesdetailComponent implements OnInit {
     })
   }
 
-  // onUpdateSalarie(employe : Salaries) {
 
-  //   console.log("salarie : ", employe);
-  //   this.salarserv.updateSalaries(this.salarie.id,employe).subscribe(
-  //     (data) => {
-  //       console.log("employee : ", data);
-  //     }
-  //   )
-  // }
 
   onUpdateSalarie(employe : Salaries) {
 
