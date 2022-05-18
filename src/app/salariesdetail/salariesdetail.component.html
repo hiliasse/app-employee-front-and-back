@@ -15,17 +15,6 @@
         <div class="col-md-8">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <!-- <div class="pull-right">
-                        <div class="btn-group dropdown" uib-dropdown="dropdown">
-                            <button class="btn btn-link dropdown-toggle" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><em class="fa fa-ellipsis-v fa-lg text-muted"></em></button>
-                            <ul class="dropdown-menu dropdown-menu-right animated fadeInLeft" role="menu">
-                                <li><a href=""><span>Send by message</span></a></li>
-                                <li><a href=""><span>Share contact</span></a></li>
-                                <li><a href=""><span>Block contact</span></a></li>
-                                <li><a href=""><span class="text-warning">Delete contact</span></a></li>
-                            </ul>
-                        </div>
-                    </div> -->
                     <div class="h4 text-center">Contact Information</div>
                     <div class="row pv-lg">
                         <div class="col-lg-2"></div>
@@ -35,54 +24,36 @@
                                     <label class="col-sm-2 control-label" for="inputContact1">FirstName</label>
                                     <div class="col-sm-10">
                                        <input class="form-control" id="inputContact1" type="text" name="firstname" ngModel="{{salarie?.firstName}}"> 
-                                        <!-- <input class="form-control" id="inputContact1" type="text"name="firstname" [(ngModel)] = "salarie.firstname">   -->
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label" for="inputContact2">LastName</label>
                                     <div class="col-sm-10">
                                       <input class="form-control" id="inputContact2" type="text" name="lastname" ngModel="{{salarie?.lastName}}">
-                                        <!-- <input class="form-control" id="inputContact2" type="text" name="lastname" [(ngModel)] = "salarie.lastname">   -->
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label" for="inputContact3">Email</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" id="inputContact3" type="text" name="email" ngModel="{{salarie?.email}}">
-                                        <!-- <input class="form-control" id="inputContact3" type="email" value={{salarie?.email}}> -->
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label" for="inputContact4">Phone</label>
                                     <div class="col-sm-10">
-                                        <!-- <input class="form-control" id="inputContact4" type="text" value={{salarie?.numberPhone}}> -->
                                         <input class="form-control" id="inputContact4" type="text" name="numberPhone" ngModel="{{salarie?.phoneNumber}}">
                                     </div>
                                 </div>
-                                <!-- <div class="form-group">
-                                    <label class="col-sm-2 control-label" for="inputContact4">Mobile</label>
-                                    <div class="col-sm-10">
-                                        <input class="form-control" id="inputContact4" type="text" value="(12) 123 987 465">
-                                    </div>
-                                </div> -->
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label" for="inputContact5">Matricule</label>
                                     <div class="col-sm-10">
-                                        <!-- <input class="form-control" id="inputContact5" type="text" value={{salarie?.matricule}}> -->
                                         <input class="form-control" id="inputContact5" type="text" name="matricule" ngModel="{{salarie?.employeeCode}}">
                                     </div>
                                 </div>
-                                <!-- <div class="form-group">
-                                    <label class="col-sm-2 control-label" for="inputContact6">Address</label>
-                                    <div class="col-sm-10">
-                                        <textarea class="form-control" id="inputContact6" row="4">Some nice Street, 1234</textarea>
-                                    </div>
-                                </div> -->
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label" for="inputContact7">Fonction </label>
                                     <div class="col-sm-10">
                                         <input class="form-control" id="inputContact7" type="text" name="fonction" ngModel="{{salarie?.job}}">
-                                        <!-- <input class="form-control" id="inputContact7" type="text" value={{salarie?.fonction}}> -->
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -91,14 +62,6 @@
                                         <input class="form-control" id="inputContact8" type="text" value="Sopra Steria">
                                     </div>
                                 </div>
-                                <!-- <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Favorite contact?</label>
-                                        </div>
-                                    </div>
-                                </div> -->
                                 <div class="btn-group"> 
                                     <div class="form-group mt-2 button-maj">
                                           <div class="col-sm-offset-2 col-sm-10">
@@ -107,17 +70,14 @@
                                     </div>
                                     <div class="form-group mt-2 button-maj">
                                           <div class="col-sm-offset-2 col-sm-10">         
-                                                <!-- <img alt="image" class="img-circle" src="https://img.icons8.com/plasticine/35/000000/filled-trash.png"/>             -->
                                              <button (click)="onDeleteSalarie ()"  class="btn btn-danger " type="submit" >  
                                                 <img alt="delete" class="img-circle" src="https://img.icons8.com/carbon-copy/25/000000/filled-trash.png" title="Delete"/>  
                                               
-                                                <!-- <figcaption> delete</figcaption> -->
                                             Delete </button>
                                          </div>
                                     </div>
                                 </div>
                             </form>
-                            <!-- <div class="text-right"><a class="text-muted" href="#">Delete this contact?</a></div> -->
                         </div>
                     </div>
                 </div>
@@ -126,9 +86,3 @@
     </div>
 </div>
 
-<div>
-    <p> test </p>
-    
-    <img src="https://img.icons8.com/plasticine/50/000000/filled-trash.png"/>
-    <button (click)="onDeleteSalarie ()"  class="btn btn-info" type="submit">delete</button>
-</div>

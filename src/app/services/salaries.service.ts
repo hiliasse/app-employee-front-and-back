@@ -11,22 +11,16 @@ const httpOptions = {
 
 @Injectable({providedIn:"root"})
 export class SalariesService {
-
   
   private host = environment.apiBaseUrl;
-  // public host:string="http://localhost:10300/api/v1/employee";
-  // public host:string="http://localhost:3000"
 
   constructor(private http:HttpClient) {}
 
   getAllSalaries():Observable<Salaries[]>{
-    // return this.http.get<Salaries[]>(this.host+"/salaries");
-    // return this.http.get<Salaries[]>(`${this.host}/all`);
     return this.http.get<Salaries[]>(this.host + "/all");
   }
 
   addSalaries(sal:Salaries):Observable<Salaries>{
-    // return this.http.post<Salaries>(this.host+"/salaries/",sal);
     return this.http.post<Salaries>(this.host+"/add/",sal);
   }
 
@@ -40,31 +34,14 @@ export class SalariesService {
   }
 
   deleteSalaries(salarieId:number):Observable<void>{
-    // return this.http.delete<void>(this.host+"/salaries/"+salarieId);
     return this.http.delete<void>(this.host+"/delete/"+salarieId);
   }
 
   getSalarieById(id: number): Observable<Salaries> {
- 
-    // return this.http.get<Salaries>(this.host+"/salaries/"+id);
+
     return this.http.get<Salaries>(this.host+"/"+id);
   }
 
 
-  // getSalariesByName():Observable<Salaries[]>{
-  //   return this.http.get<Salaries[]>(this.host+"/salaries");
-  // }
-
-
-  // getUsers ():Users[]{
-  //   let host=environment.host;
-  //   return this.http.get<Users[]>(host+"/user");
-  // }
-
-  // getSalarieById(id: number): Observable<Salaries> {
- 
- 
-  //   return this.http.get<Salaries>(this.host+"/users/"+id);
-  // }
 
  }

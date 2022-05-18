@@ -18,14 +18,10 @@ export class SalariesdetailComponent implements OnInit {
   ngOnInit(): void {
 
     const idT = Number(this.route.snapshot.paramMap.get('id'));
-    console.log('idT:' ,idT);
     this.salarserv.getSalarieById(idT).subscribe((data) => {
       this.salarie = data ;
-      console.log('user :', this.salarie);
     })
   }
-
-
 
   onUpdateSalarie(employe : Salaries) {
 
@@ -39,7 +35,6 @@ export class SalariesdetailComponent implements OnInit {
 
   onDeleteSalarie() {
 
-    // console.log("salarie : ", employe);
     console.log("employee : ", this.salarie.id);
     this.salarserv.deleteSalaries(this.salarie.id).subscribe(
       (data) => {

@@ -27,7 +27,7 @@ export class SalariesComponent implements OnInit {
   onGetAllSalaries(){
     console.log("Salaries : ");
       this.salarserv.getAllSalaries().subscribe( 
-      (data : Salaries[])=>{ 
+      (data )=>{ 
         this.salar = data;
         console.log(data);
       })
@@ -37,9 +37,8 @@ export class SalariesComponent implements OnInit {
   public onAddEmloyee(addForm: NgForm ): void {
    
     this.salarserv.addSalaries(addForm.value ).subscribe(
-      (response: Salaries) => {
+      (response) => {
         console.log(response);
-        // this.getEmployees();
         addForm.reset();
       }
     );
@@ -54,12 +53,7 @@ export class SalariesComponent implements OnInit {
       data =>{ 
               console.log("data : ", data);             
               this.salar = data.filter((x : Salaries)=> 
-                  //  (x.firstname||'').toLocaleUpperCase().indexOf(this.Collaborateur)!=-1 || (x.lastname||'').toLocaleUpperCase().indexOf(this.Collaborateur)!=-1
                      x.firstName.toLocaleLowerCase().indexOf(this.Collaborateur)!=-1 || x.lastName.toLocaleLowerCase().indexOf(this.Collaborateur)!=-1
-                  //  console.log("test", x.firstname.toLocaleLowerCase())
-                  //  console.log("test", x.email)
-                //  this.userid = x.id;
-                //  console.log("id", this.userid)
               );
              }
       )
@@ -70,24 +64,5 @@ export class SalariesComponent implements OnInit {
   public get salarInfos (){
     return this.salar;
   }
-
-
-  detail(){
-    console.log("test click ");
-    console.log("salar : ", this.salar);
-    this.salar.map(data => this.userid = data.id) ;
-    console.log("id", this.userid);
-    this.router.navigate(["/salariesdetail",this.userid]);
-  }
-
-    Test(){
-
-      console.log("salar : ", this.salar);
-      var myFav   = "javascript";
-      var theList = "VB.NET, C#, PHP, Python, JavaScript, and Ruby";
-      console.log("the list",  theList.indexOf( myFav ) );
-      console.log("my fav",theList.toLowerCase().indexOf( myFav.toLowerCase() ) );
-     
-    }
 
 }
