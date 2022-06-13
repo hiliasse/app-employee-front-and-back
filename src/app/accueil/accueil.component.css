@@ -1,0 +1,25 @@
+.Accueil{
+    padding: 30px;
+    margin-top: 150px;
+    background: url("/assets/image/templateAccueil.jpg") no-repeat top/cover;
+    height: 100vh;
+    
+    /* width: 100%;  */
+    /* padding-top: 2000px;   */
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+/* 
+    width: 50%; */
+    text-align: center;
+    font-size: medium;
+    
+
+}
+/* h2{
+    color: rgb(253, 252, 251);
+    width: 40%;
+    text-align: center;
+} */

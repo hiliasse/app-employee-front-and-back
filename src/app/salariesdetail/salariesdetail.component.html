@@ -1,4 +1,4 @@
-<div class="container bootstrap snippets bootdey mt-2">
+<div class="container bootstrap snippets bootdey mt-2 ">
     <div class="row ng-scope">
         <div class="col-md-4">
             <div class="panel panel-default">
@@ -32,31 +32,32 @@
                         <div class="col-lg-8">
                             <form class="form-horizontal ng-pristine ng-valid" #editForm="ngForm">
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label" for="inputContact1">FirstName</label>
+                                    <label class="col-sm-2 mt-3 control-label" for="inputContact1">FirstName</label>
                                     <div class="col-sm-10">
-                                       <input class="form-control" id="inputContact1" type="text" name="firstname" ngModel="{{salarie?.firstName}}"> 
+                                        <input type="hidden" ngModel="{{salarie?.id}}" name="id" class="form-control" id="id">
+                                       <input class="form-control" id="inputContact1" type="text" name="firstName" ngModel="{{salarie?.firstName}}"> 
                                         <!-- <input class="form-control" id="inputContact1" type="text"name="firstname" [(ngModel)] = "salarie.firstname">   -->
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label" for="inputContact2">LastName</label>
+                                    <label class="col-sm-2 mt-3 control-label" for="inputContact2">LastName</label>
                                     <div class="col-sm-10">
-                                      <input class="form-control" id="inputContact2" type="text" name="lastname" ngModel="{{salarie?.lastName}}">
+                                      <input class="form-control" id="inputContact2" type="text" name="lastName" ngModel="{{salarie?.lastName}}">
                                         <!-- <input class="form-control" id="inputContact2" type="text" name="lastname" [(ngModel)] = "salarie.lastname">   -->
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label" for="inputContact3">Email</label>
-                                    <div class="col-sm-10">
+                                    <label class="col-sm-2 mt-3 control-label" for="inputContact3">Email</label>
+                                    <div class="col-sm-10">                          
                                         <input class="form-control" id="inputContact3" type="text" name="email" ngModel="{{salarie?.email}}">
                                         <!-- <input class="form-control" id="inputContact3" type="email" value={{salarie?.email}}> -->
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label" for="inputContact4">Phone</label>
+                                    <label class="col-sm-2 mt-3 control-label" for="inputContact4">Phone</label>
                                     <div class="col-sm-10">
                                         <!-- <input class="form-control" id="inputContact4" type="text" value={{salarie?.numberPhone}}> -->
-                                        <input class="form-control" id="inputContact4" type="text" name="numberPhone" ngModel="{{salarie?.phoneNumber}}">
+                                        <input class="form-control" id="inputContact4" type="text" name="phoneNumber" ngModel="{{salarie?.phoneNumber}}">
                                     </div>
                                 </div>
                                 <!-- <div class="form-group">
@@ -66,10 +67,10 @@
                                     </div>
                                 </div> -->
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label" for="inputContact5">Matricule</label>
+                                    <label class="col-sm-2 mt-3 control-label" for="inputContact5">Matricule</label>
                                     <div class="col-sm-10">
                                         <!-- <input class="form-control" id="inputContact5" type="text" value={{salarie?.matricule}}> -->
-                                        <input class="form-control" id="inputContact5" type="text" name="matricule" ngModel="{{salarie?.employeeCode}}">
+                                        <input class="form-control" id="inputContact5" type="text" name="employeeCode" ngModel="{{salarie?.employeeCode}}">
                                     </div>
                                 </div>
                                 <!-- <div class="form-group">
@@ -79,14 +80,14 @@
                                     </div>
                                 </div> -->
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label" for="inputContact7">Fonction </label>
+                                    <label class="col-sm-2 mt-3 control-label" for="inputContact7">Fonction </label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" id="inputContact7" type="text" name="fonction" ngModel="{{salarie?.job}}">
+                                        <input class="form-control" id="inputContact7" type="text" name="job" ngModel="{{salarie?.job}}">
                                         <!-- <input class="form-control" id="inputContact7" type="text" value={{salarie?.fonction}}> -->
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label" for="inputContact8">Company</label>
+                                    <label class="col-sm-2 mt-3 control-label" for="inputContact8">Company</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" id="inputContact8" type="text" value="Sopra Steria">
                                     </div>
@@ -99,6 +100,12 @@
                                         </div>
                                     </div>
                                 </div> -->
+                                <div class="form-group">
+                                    <label class="col-sm mt-3" for="inputContact9">Piece Jointe CV</label>
+                                    <div class="col-sm-10">
+                                        <input type ="file" (change)="getfile($event)"  >
+                                    </div>
+                                </div>
                                 <div class="btn-group"> 
                                     <div class="form-group mt-2 button-maj">
                                           <div class="col-sm-offset-2 col-sm-10">

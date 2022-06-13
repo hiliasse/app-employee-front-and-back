@@ -50,6 +50,13 @@ export class SalariesService {
     return this.http.get<Salaries>(this.host+"/"+id);
   }
 
+  updateFiles(file: File): Observable<void> {
+ 
+    let formData = new FormData();
+    formData.append('file', file);
+ 
+    return  this.http.post<void>("http://localhost:10300/api/v1/employee/upload/file",formData);
+  }
 
   // getSalariesByName():Observable<Salaries[]>{
   //   return this.http.get<Salaries[]>(this.host+"/salaries");

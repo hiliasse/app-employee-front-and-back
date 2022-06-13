@@ -8,18 +8,19 @@
     </button>
   </div> -->
 
-  <div class="input-group">
-    <input type="text" class="form-control" name = "Collaborateur" placeholder="Search Collaborateur"  [(ngModel)]="Collaborateur" (ngModelChange)="Collaborateur = $event">
-    <div class="input-group-append">
-      <button button (click)="onGetSalariesBySearch()" class="btn btn-secondary" type="button">
-        <i class="fa fa-search"></i>
-      </button>
-    </div>
-  </div>
 
-  <div class="container mt-5" >
+
+  <div class="container " >
+    <div class="input-group">
+      <input type="text" class="form-control" name = "Collaborateur" placeholder="Search Collaborateur"  [(ngModel)]="Collaborateur" (ngModelChange)="Collaborateur = $event">
+      <div class="input-group-append">
+        <button button (click)="onGetSalariesBySearch()" class="btn btn-secondary" type="button">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
     <div class="row">    
-      <div *ngFor="let p of salar" class="col-md ">
+      <div *ngFor="let p of salar" class="col-md-4 ">
         <!-- <div class="col-md-5"> -->
             <div class="contact-box center-version">
                 <a href="#profile.html"  [routerLink]="['/salariesdetail',p.id]" >

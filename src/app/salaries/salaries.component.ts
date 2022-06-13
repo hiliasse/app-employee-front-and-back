@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { filter, map, Observable } from 'rxjs';
+import { filter, map, Observable, take } from 'rxjs';
 import { Salaries } from '../model/salaries.model';
 import { SalariesService } from '../services/salaries.service';
  
@@ -22,6 +22,19 @@ export class SalariesComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    // this.salarserv.getAllSalaries().pipe(
+    //   map  (
+    //   (data )=>{ 
+    //     this.salar = data;
+    //     console.log(data);
+    //   }),
+    //   take(1)
+    //   );
+    this.salarserv.getAllSalaries().subscribe(
+      (data : Salaries[])=>{ 
+        this.salar = data;
+        console.log(data);
+      })
   }
 
   onGetAllSalaries(){

@@ -1,18 +1,16 @@
-<nav class="navbar navbar-expand-sm bg-dark  navbar-dark">
+<!-- <nav class="navbar navbar-expand-sm bg-dark  navbar-dark"> 
     <div class="container-fluid">
       <ul class="navbar-nav">
-         
-        <!-- <a href="https://www.flaticon.com/free-icons/company" title="company icons"></a> -->
         <a class="navbar-brand" href="#">soprasteria</a>
         <li class="nav-item">
-          <a class="nav-link" routerLink ="">Accueil</a>
+          <a class="nav-link mx-2 active " routerLink ="">Accueil</a>
         </li>
         <li class="nav-item dropdown">
-        <a class="nav-link "  role="button" data-bs-toggle="dropdown">Services</a>
+        <a class="nav-link  mx-2 "  role="button" data-bs-toggle="dropdown">Services</a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Conseil</a></li>
           <li><a class="dropdown-item" href="#">Solutions Logicielles</a></li>
-          <li><a class="dropdown-item" href="#">Cybersecurite</a></li> <!-- avec  href="#", il retourne a la page d'accueil mais pas avec href="javascript:void(0)" -->
+          <li><a class="dropdown-item" href="#">Cybersecurite</a></li>  
         </ul>                       
       </li>
   
@@ -20,12 +18,69 @@
           <a class="nav-link dropdown-toggle "role="button" data-bs-toggle="dropdown">Nous connaitre</a> 
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" routerLink="/salaries" >Nos salaries</a></li>
-            <!-- <li><a class="dropdown-item" routerLink="api/v1/employee" >Nos salaries</a></li> -->
+ 
             <li><a class="dropdown-item" href="#">Nos partenariats</a></li>
             <li><a class="dropdown-item" href="#">Notre mission</a></li> 
           </ul>     
        </li>
       </ul>
     </div>
-  </nav>
-  
+</nav> -->
+
+
+
+
+ 
+ <nav class="navbar fixed-top first-nav ">  
+    <div class="container-fluid">
+      <img src="/assets/image/logo.png" class="logo" >
+      <div class=" search">
+        <div class="container">
+          <form class="input-icons">
+            <input class="input-field" type="text" placeholder="Search">
+            <button class="btn" type="button"><i class="fas fa-search icon"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="reseaux"> 
+         <img src="https://img.icons8.com/fluency/30/000000/facebook-new.png"/>
+         <img src="https://img.icons8.com/fluency/30/000000/twitter.png"/>
+         <img src="https://img.icons8.com/fluency/30/000000/instagram-new.png"/>
+     </div>
+    </div>
+</nav> 
+
+ 
+  <nav class="navbar navbar-expand fixed-top second-nav">
+  <div class="navbar-collapse collapse" id="navbar2">
+      <ul class="nav nav-pills  ">
+          <li class="nav-item active">
+              <a class="nav-link"  routerLink ="">Accueil </a>
+          </li>
+          <li class="nav-item active">
+              <a class="nav-link"  href="#">Services</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link"  routerLink="/salaries">Nos salaries</a>
+          </li>
+      </ul>
+  </div>
+</nav> 
+
+
+
+ 
+<!-- <nav class="first-nav fixed-top">  
+    <div class="col grid"> 
+      <img src="/assets/image/logo.png" class="logo colm" >
+          <form class="child colm">
+            <input class="input-field" type="text" placeholder="Search">
+            <button class="btn" type="button"><i class="fas fa-search icon"></i></button>
+          </form>
+      <div class="reseaux colm"> 
+         <img src="https://img.icons8.com/fluency/30/000000/facebook-new.png"/>
+         <img src="https://img.icons8.com/fluency/30/000000/twitter.png"/>
+         <img src="https://img.icons8.com/fluency/30/000000/instagram-new.png"/>
+      </div>
+    </div>
+</nav>   -->

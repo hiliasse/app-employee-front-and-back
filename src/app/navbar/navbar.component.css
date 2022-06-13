@@ -1,0 +1,163 @@
+
+.first-nav{
+    padding: 0;
+    background: white ;
+}
+
+.container-fluid{
+  padding: 0;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-gap: 8%;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "br i1 rs";
+}
+
+.logo{    
+width: 125px;
+grid-area: br;
+}
+
+.search{
+    grid-area: i1;
+}
+
+.container{
+    padding: 0;
+    width: 250px;
+    margin-left: 500px;
+    position: relative;
+}
+  
+.input-field {
+    width: 100%;
+    height: 40px;
+    padding-right: 100px !important; 
+    border-radius: 20px;
+}
+
+.btn {
+    position: absolute;
+    right: 3px; 
+    top: 3px;
+    bottom: 3px;
+    line-height: 1 !important;
+    z-index: 4;
+  }
+
+.reseaux img{
+    grid-area: rs;
+    padding: 0px;
+    margin-left: 15px ;
+    width: 33px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+
+
+
+/******************************** test ********************/
+/* .first-nav{
+    padding: 0;
+    background: white ;
+}
+
+.grid{
+    display: grid ;
+    grid-template-columns: 20% 65% 15%;  
+    grid-template-rows: 1fr;
+   
+}
+
+.child{
+    position: relative;
+}
+
+.logo{    
+    width: 125px;
+} */
+
+/* .colm{
+    display: inline-block;
+    position: relative;
+} */
+
+/* .input-field {
+    margin-top: 30px;
+    margin-left: 350px;
+    height: 40px;
+    padding-right: 90px !important; 
+    border-radius: 20px;
+}
+
+.btn {
+    position: absolute;
+    right: 220px; 
+    top: 3px;
+    bottom: 5px;
+    line-height: 1 !important;
+    z-index: 4;
+  }
+
+.reseaux img{
+    margin-top: 30px;
+    margin-left: 25px ;
+    width: 33px;
+    
+}   */
+
+
+
+/********************** second navbar *****************************/
+
+.second-nav{
+    margin-top: 100px;
+    background: #ac2327f5;
+ 
+}
+
+#navbar2{
+    justify-content: center;
+    align-items: center;
+}
+
+li:hover{
+  
+    margin-left: 5px ;
+    background: rgb(216, 83, 83); 
+}
+
+.nav-link{
+
+    color: rgb(230, 225, 225);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid ;
+    border-block-color:  rgb(0, 0, 0);
+}
+
+.headbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.custom-search {
+    position: relative;
+  }
+  .custom-search-input {
+    width: 100%;
+    padding-right: 100px !important; 
+    box-sizing: border-box;
+  }
+  .custom-search-botton {
+    position: absolute;
+    right: 3px; 
+    top: 3px;
+    bottom: 3px;
+    line-height: 1 !important;
+    z-index: 4;
+  }

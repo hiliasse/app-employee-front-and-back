@@ -1,19 +1,26 @@
 
-.input-group{
-    margin: 20px auto 0;
-    width: 300px;
-}
 
+/* 
 body{margin-top:20px;
-    background:#eee;
+    background:rgb(109, 65, 65);
+    } */
+    .container{
+      padding-top: 20px;
+      margin-top: 200px ;
+      background: #b1a09e  ;
+
     }
-    
+    .input-group{
+      width: 300px;
+      margin-left: 800px;
+       
+     }
     /* CONTACTS */
     .contact-box {
-      background-color: #ffffff;
-      border: 1px solid #e7eaec;
+      background-color: #d4d1d1ce;
+      border: 2px solid #ec522b;
       padding: 20px;
-      margin-bottom: 20px;
+      margin: 25px;
     }
     .contact-box > a {
       color: inherit;

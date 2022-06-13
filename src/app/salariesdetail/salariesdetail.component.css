@@ -2,6 +2,13 @@ body{
     margin-top:20px;
     background:#f5f7fa;
 }
+.input-group{
+    padding-left: 500px;
+}
+
+.container{
+    padding-top: 160px;
+}
 .panel.panel-default {
     border-top-width: 3px;
 }
